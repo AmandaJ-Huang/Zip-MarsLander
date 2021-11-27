@@ -40,7 +40,7 @@ public class Simulation {
 
 
     public void printString(String string) {
-// print long strings with new lines the them.
+    // print long strings with new lines the them.
     String[] a = string.split("\r?\n");
         for (String s : a) {
             System.out.println(s);
@@ -76,6 +76,9 @@ public class Simulation {
         // create a new Simulation object with a random starting altitude
         // create a new BurnInputStream
         // pass the new BurnInputStream to the runSimulation method
+        Simulation game = new Simulation(new Vehicle(Simulation.randomaltitude()));
+        BurnStream burnSource = new BurnInputStream();
+        game.runSimulation(burnSource);
     }
 
 }
