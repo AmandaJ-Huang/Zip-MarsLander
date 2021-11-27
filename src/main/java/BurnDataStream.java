@@ -7,9 +7,11 @@ public class BurnDataStream implements BurnStream {
     int burnIdx = -1;
 
     public BurnDataStream() { }
+
     public BurnDataStream(int[] burns) {
         this.burnArray = burns;
     }
+
     @Override
     public int getNextBurn(DescentEvent status) {
         if (burnIdx < burnArray.length) {
