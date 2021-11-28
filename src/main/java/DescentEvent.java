@@ -20,7 +20,9 @@ public class DescentEvent {
     public int getAltitude() {
         return this.Altitude;
     }
+
     public int getStatus() { return this.Status; }
+
     @Override
     public String toString() {
         String s = this.Seconds +"\t\t" + this.Velocity + " \t\t" + this.Fuel + " \t\t" + this.Altitude;

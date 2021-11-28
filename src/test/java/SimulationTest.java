@@ -43,4 +43,12 @@ public class SimulationTest {
         Assert.assertEquals(okay, Vehicle.SUCCESS);
     }
 
+    @Test
+    public void run25000SimulationComputer() {
+        BurnStream burnSource = new OnBoardComputer();
+        Simulation game = new Simulation(new Vehicle(25000));
+        int okay = game.runSimulation(burnSource);
+        Assert.assertEquals(okay, Vehicle.SUCCESS);
+    }
+
 }
